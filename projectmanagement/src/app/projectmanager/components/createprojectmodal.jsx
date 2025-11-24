@@ -70,7 +70,7 @@ export default function CreateProjectModal({ open = false, onClose = () => {}, o
             <input
               value={name}
               onChange={e => setName(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-200 rounded-lg shadow-sm text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EF4444]"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm text-gray-900 placeholder:text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#EF4444]/30 focus:border-[#EF4444] transition-all"
               placeholder="e.g. Website Redesign"
               aria-required="true"
               required
@@ -96,14 +96,14 @@ export default function CreateProjectModal({ open = false, onClose = () => {}, o
                     value={m.email}
                     onChange={e => setMemberField(m.id, 'email', e.target.value)}
                     placeholder="email@example.com"
-                    className="w-full sm:flex-1 px-3 py-2 border border-gray-200 rounded-lg shadow-sm text-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#EF4444]"
+                    className="w-full sm:flex-1 px-4 py-2 border border-gray-200 rounded-lg shadow-sm text-gray-900 placeholder:text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-[#EF4444]/30 focus:border-[#EF4444] transition-all"
                   />
 
                   <div className="relative w-full sm:w-auto flex-none">
                     <select
                       value={m.role}
                       onChange={e => setMemberField(m.id, 'role', e.target.value)}
-                      className="appearance-none pr-8 w-full sm:w-36 px-3 py-2 border border-gray-200 rounded-lg bg-white text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#EF4444]"
+                      className="appearance-none pr-8 w-full sm:w-36 px-4 py-2 border border-gray-200 rounded-lg bg-white text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#EF4444]/30 focus:border-[#EF4444] transition-all cursor-pointer"
                       aria-label={`Role for member ${idx + 1}`}
                     >
                       <option>Member</option>
